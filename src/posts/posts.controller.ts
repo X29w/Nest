@@ -47,7 +47,7 @@ export class PostsController {
 
   @Put(':id')
   @ApiOperation({ summary: '编辑' })
-  update(@Param('id') id: number, @Body() bdy: createPostsDTO) {
+  update(@Param('id') id: number, @Body() body: createPostsDTO) {
     return {
       success: true,
     };
